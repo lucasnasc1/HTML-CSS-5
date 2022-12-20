@@ -1,0 +1,133 @@
+body{
+  margin: 0;
+  margin-top: 60px;
+  display: grid;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-items: center;
+  gap: 60px;
+  
+
+}
+p, h1 ,h2 ,h3{
+  margin: 0px;
+}
+a{
+  text-decoration: none;
+}
+nav{
+  display: flex;
+  flex-wrap: wrap;
+  gap:40px;
+  justify-content: center;
+  background: #8b8b8b;
+  padding: 20px 40px;
+  border-radius: 5px;
+}
+nav a{
+  border-radius: 5px;
+  background: #f7f7f7;
+  padding: 10px 30px;
+  color: black;
+  text-transform: uppercase;
+
+}
+img{
+  max-width: 100%;
+  display: block;
+}
+.conteudo{
+  width: 1000px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.introducao{
+  display: grid;
+  align-content: center;
+  justify-items: end;
+  position: relative;
+  background: #f7f7f7;
+  padding: 40px;
+  text-align: right;
+  gap: 25px;
+}
+.introducao a{
+  padding: 10px 20px;
+  background: #e21;
+  border-radius: 4px;  
+}
+span{
+  width: 60px;
+  height: 4px;
+  background: #e21;
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
+footer{
+  max-width: 100%;
+  background: #8b8b8b;
+}
+.rodape {
+  background: #8b8b8b;
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.subtitulo{
+  text-align: right;
+  padding: 40px;
+  font-size: 3rem;
+  align-self: center;
+  display: grid;
+  align-content: center;
+  height: 20rem;
+}
+.vantagens{
+  padding: 40px;
+  display: grid;
+  align-content: center;
+  background: #f7f7f7;
+}
+.itens{
+  display: grid;
+  grid-template-columns: 600px;
+  gap: 20px;
+}
+.itens h3{
+  margin-top: 20px;
+}
+
+@media(max-width: 1000px){
+  .conteudo{
+    display: flex;
+    flex-direction: column;
+
+    max-width:800px ;
+  }
+
+ 
+  .detalhe{
+    display: none;
+  }
+  .subtitulo h3{
+    font-size: 50px;
+  }
+  .introducao{
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    height: 300px;
+    
+  }
+  .introducao a{
+    padding: 20px 40px;
+    background: #e21;
+    border-radius: 5px;
+    font-size: 23px;  
+  
+  }
+
+  
+}
+
